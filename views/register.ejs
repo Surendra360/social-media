@@ -1,0 +1,15 @@
+<%-include("./partials/header")%>
+<%-include("./partials/nav")%>
+
+<h1>register New user</h1>
+
+<form action="/register" method="post">
+    <input type="text" name="name" placeholder="Enter your full name">
+    <input type="text" name="username" placeholder="Enter your username name">
+    <input type="text" name="email" placeholder="Enter your email">
+    <input type="text" name="phone" placeholder="Enter your phone number">
+    <input type="password" name="password" placeholder="Enter your password">
+    <button>Register</button>
+</form>
+
+<%-include("./partials/footer")%>
