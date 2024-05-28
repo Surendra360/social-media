@@ -1,0 +1,55 @@
+<%-include("./partials/header")%>
+<%-include("./partials/nav")%>
+
+<div class="w-screen flex flex-col items-center justify-between">
+
+    <div class="mb-8 mt-5 w-[40%] h-[100vh] p-4 border border-gray-200 rounded shadow md:p-6 dark:border-gray-700">
+        <div class="flex flex-col items-center justify-center mb-8">
+            <img src="./images/icons/fav.png" alt="">
+            <h1 class="text-center text-2xl font-semibold">Welllcome to SoMid</h1>
+        </div>
+        <form action="/login" method="post" class="max-w-sm mx-auto">
+              <div class="mb-5">
+                <label
+                  for="username"
+                  class="block mb-2 text-sm font-medium text-black"
+                  >Username</label
+                >
+                <input
+                  type="username"
+                  id="username"
+                  class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                  name="username"
+                />
+              </div>
+
+              
+              <div class="mb-5">
+                  <label
+                  for="password"
+                  class="block mb-2 text-sm font-medium text-black"
+                  >Your password</label
+                  >
+                  <input
+                  type="password"
+                  id="password"
+                  class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                  name="password"
+                  />
+                </div>
+                <div class=" items-start mb-5">
+                    <p>Don't have password <a class="text-blue-700" href="/register">forget ?</a></p> 
+                    <p>Don't have account <a class="text-blue-700" href="/register">Register now ?</a></p> 
+                </div>
+          <button
+            
+            class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 "
+          >
+            login
+          </button>
+        </form>
+          </div>
+
+</div>
+
+<%-include("./partials/footer")%>

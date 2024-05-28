@@ -32,3 +32,12 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("user", userSchema);
 module.exports = User;
+
+
+// Reference Schema ---> one to many relationship
+// User              Post
+//                   title 
+// id                user{} 
+// post[]  
+
+// one user can create multiple post but single post can access only single user

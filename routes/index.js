@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
 router.get('/register', function(req, res, next) {
   res.render('register');
 });
-router.get('/all', function(req, res, next) {
-  res.render('all');
+router.get('/login', function(req, res, next) {
+  res.render('login');
 });
 router.get('/about', function(req, res, next) {
   res.render('about');
